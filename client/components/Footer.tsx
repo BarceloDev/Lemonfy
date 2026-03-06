@@ -68,7 +68,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>© {currentYear} Lemonfy - Desenvolvimento de Software. Todos os direitos reservados.</p>
+          <p>© {currentYear} Lemonfy - Desenvolvimento de Software.</p>
         </div>
       </div>
     </footer>
