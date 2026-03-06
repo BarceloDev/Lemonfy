@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const services = [
   {
     title: "Desenvolvimento Web",
-    description: "Websites rápidos, acessíveis e otimizados para conversão. Utilizamos as tecnologias mais modernas como React, Next.js e Tailwind.",
+    description: "Websites rápidos, acessíveis e otimizados para conversão. Utilizamos as tecnologias mais modernas como React e Tailwind.",
     icon: Globe,
     color: "bg-emerald-500/10 text-emerald-600"
   },
