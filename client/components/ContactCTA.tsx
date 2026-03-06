@@ -3,7 +3,7 @@ import { Citrus, ArrowRight } from "lucide-react";
 
 export default function ContactCTA() {
   return (
-    <section className="py-24">
+    <section id="contato" className="py-24">
       <div className="container mx-auto px-4">
         <div className="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 md:px-24 md:py-32 text-center text-primary-foreground shadow-2xl">
           {/* Background shapes */}

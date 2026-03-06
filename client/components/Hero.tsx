@@ -3,7 +3,7 @@ import { Citrus, ArrowRight, Code, Laptop } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32 lg:py-48">
+    <section id="top" className="relative overflow-hidden py-24 md:py-32 lg:py-48">
       {/* Background decorations */}
       <div className="absolute top-0 right-0 -mr-24 -mt-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl animate-pulse" />
       <div className="absolute bottom-0 left-0 -ml-24 -mb-24 h-96 w-96 rounded-full bg-secondary/20 blur-3xl animate-pulse delay-700" />

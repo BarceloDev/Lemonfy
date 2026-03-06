@@ -6,26 +6,19 @@ export default function Footer() {
 
   const footerLinks = [
     {
-      title: "Empresa",
+      title: "Menu",
       links: [
-        { name: "Sobre Nós", href: "/sobre" },
-        { name: "Carreiras", href: "/carreiras" },
-        { name: "Blog", href: "/blog" },
-      ],
-    },
-    {
-      title: "Serviços",
-      links: [
-        { name: "Desenvolvimento Web", href: "/servicos/web" },
-        { name: "Apps Mobile", href: "/servicos/mobile" },
-        { name: "Consultoria UI/UX", href: "/servicos/design" },
+        { name: "Início", href: "#top" },
+        { name: "Serviços", href: "#servicos" },
+        { name: "Recursos", href: "#recursos" },
+        { name: "Contato", href: "#contato" },
       ],
     },
     {
       title: "Legal",
       links: [
-        { name: "Privacidade", href: "/privacidade" },
-        { name: "Termos", href: "/termos" },
+        { name: "Privacidade", href: "#" },
+        { name: "Termos", href: "#" },
       ],
     },
   ];
@@ -35,12 +28,12 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="md:col-span-2 lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-4 group">
+            <a href="#top" className="flex items-center gap-2 mb-4 group">
               <Citrus className="h-8 w-8 text-primary transition-transform group-hover:rotate-12" />
               <span className="text-2xl font-extrabold tracking-tight text-foreground">
                 Lemon<span className="text-primary">fy</span>
               </span>
-            </Link>
+            </a>
             <p className="mb-6 max-w-sm text-muted-foreground leading-relaxed">
               Transformando ideias ácidas em soluções doces para o seu negócio.
               Especialistas em desenvolvimento web e de software com um toque cítrico.
@@ -69,12 +62,12 @@ export default function Footer() {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
+                    <a
+                      href={link.href}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {link.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

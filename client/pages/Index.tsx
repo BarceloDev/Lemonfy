@@ -8,13 +8,18 @@ export default function Index() {
   // Smooth scroll for anchor links
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+      const target = (e.target as HTMLElement).closest('a');
+      if (target && target.getAttribute('href')?.startsWith('#')) {
+        const href = target.getAttribute('href');
+        if (href === '#') return;
+
         e.preventDefault();
-        const id = target.getAttribute('href')?.substring(1);
-        const element = document.getElementById(id || '');
+        const id = href.substring(1);
+        const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
+          // Update URL without reload
+          window.history.pushState(null, '', href);
         }
       }
     };

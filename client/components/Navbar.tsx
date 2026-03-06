@@ -8,34 +8,33 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Início", href: "/" },
-    { name: "Serviços", href: "/servicos" },
-    { name: "Portfólio", href: "/portfolio" },
-    { name: "Sobre", href: "/sobre" },
-    { name: "Contato", href: "/contato" },
+    { name: "Início", href: "#top" },
+    { name: "Serviços", href: "#servicos" },
+    { name: "Recursos", href: "#recursos" },
+    { name: "Contato", href: "#contato" },
   ];
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
+          <a href="#top" className="flex items-center gap-2 group">
             <Citrus className="h-8 w-8 text-primary transition-transform group-hover:rotate-12" />
             <span className="text-2xl font-extrabold tracking-tight text-foreground">
               Lemon<span className="text-primary">fy</span>
             </span>
-          </Link>
+          </a>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.name}
-                to={link.href}
+                href={link.href}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
             <div className="flex items-center gap-2">
               <ThemeToggle />
@@ -64,14 +63,14 @@ export default function Navbar() {
           <div className="md:hidden py-4 animate-in slide-in-from-top-2 duration-300">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <Link
+                <a
                   key={link.name}
-                  to={link.href}
+                  href={link.href}
                   onClick={() => setIsOpen(false)}
                   className="text-base font-medium text-muted-foreground hover:text-primary px-2 transition-colors"
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
               <Button className="w-full rounded-full font-bold">
                 Começar agora
