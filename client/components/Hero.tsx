@@ -5,8 +5,16 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden py-24 md:py-32 lg:py-48">
       {/* Background decorations */}
-      <div className="absolute top-0 right-0 -mr-24 -mt-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -ml-24 -mb-24 h-96 w-96 rounded-full bg-secondary/20 blur-3xl" />
+      <div className="absolute top-0 right-0 -mr-24 -mt-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 left-0 -ml-24 -mb-24 h-96 w-96 rounded-full bg-secondary/20 blur-3xl animate-pulse delay-700" />
+
+      {/* Decorative floating lemons */}
+      <div className="absolute top-1/4 left-10 opacity-10 animate-bounce hidden lg:block">
+        <Citrus className="h-16 w-16 text-primary rotate-12" />
+      </div>
+      <div className="absolute bottom-1/4 right-10 opacity-10 animate-bounce delay-1000 hidden lg:block">
+        <Citrus className="h-20 w-20 text-secondary -rotate-12" />
+      </div>
       
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col items-center text-center">

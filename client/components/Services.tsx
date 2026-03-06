@@ -6,7 +6,7 @@ const services = [
     title: "Desenvolvimento Web",
     description: "Websites rápidos, acessíveis e otimizados para conversão. Utilizamos as tecnologias mais modernas como React, Next.js e Tailwind.",
     icon: Globe,
-    color: "bg-blue-500/10 text-blue-500"
+    color: "bg-emerald-500/10 text-emerald-600"
   },
   {
     title: "Software de Gestão",
@@ -24,19 +24,19 @@ const services = [
     title: "Aplicativos Mobile",
     description: "Presença digital em todos os lugares. Desenvolvemos apps iOS e Android nativos ou cross-platform de alta performance.",
     icon: Smartphone,
-    color: "bg-purple-500/10 text-purple-500"
+    color: "bg-lime-500/10 text-lime-600"
   },
   {
     title: "Infraestrutura Cloud",
     description: "Escalabilidade e segurança. Configuramos e gerenciamos sua infraestrutura na nuvem para suportar o crescimento do seu negócio.",
     icon: Database,
-    color: "bg-orange-500/10 text-orange-500"
+    color: "bg-green-500/10 text-green-600"
   },
   {
     title: "Otimização de Performance",
     description: "Seu site não pode esperar. Analisamos e otimizamos cada milissegundo para garantir a melhor experiência possível.",
     icon: Zap,
-    color: "bg-yellow-500/10 text-yellow-500"
+    color: "bg-primary/20 text-primary"
   }
 ];
 
