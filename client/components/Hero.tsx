@@ -18,14 +18,7 @@ export default function Hero() {
       
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col items-center text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border bg-muted/50 px-3 py-1 text-sm font-medium mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            <span>Novo: Lemonfy v2.0 lançado!</span>
-          </div>
-          
+         
           <h1 className="max-w-4xl text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl mb-6">
             Transformando o <span className="text-primary italic">digital</span> em algo <span className="underline decoration-secondary">refrescante</span>.
           </h1>
