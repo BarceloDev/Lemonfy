@@ -14,13 +14,6 @@ export default function Footer() {
         { name: "Contato", href: "#contato" },
       ],
     },
-    {
-      title: "Legal",
-      links: [
-        { name: "Privacidade", href: "#" },
-        { name: "Termos", href: "#" },
-      ],
-    },
   ];
 
   return (
