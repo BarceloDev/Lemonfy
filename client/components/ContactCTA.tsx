@@ -21,9 +21,11 @@ export default function ContactCTA() {
               Estamos ansiosos para ouvir sobre sua ideia. Entre em contato hoje mesmo e vamos construir algo refrescante juntos!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" variant="secondary" className="rounded-full px-10 text-lg font-bold h-14 hover:scale-105 transition-transform group">
-                Falar com Consultor
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <Button asChild size="lg" variant="secondary" className="rounded-full px-10 text-lg font-bold h-14 hover:scale-105 transition-transform group">
+                <a href="mailto:lemon.indust@gmail.com">
+                  Falar com Consultor
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
             </div>
           </div>
