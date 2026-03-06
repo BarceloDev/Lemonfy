@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Citrus, Github, Linkedin, Twitter } from "lucide-react";
+import { Citrus, Github, Instagram } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -36,14 +36,15 @@ export default function Footer() {
                 <Github className="h-6 w-6" />
                 <span className="sr-only">Github</span>
               </Link>
-              <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-6 w-6" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
+              <a
+                href="https://www.instagram.com/lemonfy.studio?igsh=ZTN2cGQ4Nzlpbjhh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+                <span className="sr-only">Instagram</span>
+              </a>
             </div>
           </div>
           
