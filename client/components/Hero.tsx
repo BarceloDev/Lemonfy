@@ -34,16 +34,7 @@ export default function Hero() {
             Na Lemonfy, criamos experiências digitais únicas. Do desenvolvimento web impecável a softwares robustos que impulsionam seu negócio.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="rounded-full px-8 text-lg font-bold group h-14">
-              Começar Projeto
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8 text-lg font-bold h-14">
-              Ver Portfólio
-            </Button>
-          </div>
-          
+         
           <div className="mt-20 flex flex-wrap justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
             <div className="flex items-center gap-2"><Laptop className="h-6 w-6" /> <span className="font-bold">Web Dev</span></div>
             <div className="flex items-center gap-2"><Code className="h-6 w-6" /> <span className="font-bold">Software Engineering</span></div>
