@@ -25,9 +25,6 @@ export default function ContactCTA() {
                 Falar com Consultor
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full px-10 text-lg font-bold h-14 border-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors">
-                Ver Preços
-              </Button>
             </div>
           </div>
         </div>
