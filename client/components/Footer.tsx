@@ -32,10 +32,15 @@ export default function Footer() {
               Especialistas em desenvolvimento web e de software com um toque cítrico.
             </p>
             <div className="flex space-x-4">
-              <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="https://github.com/lemonindust-byte"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Github className="h-6 w-6" />
                 <span className="sr-only">Github</span>
-              </Link>
+              </a>
               <a
                 href="https://www.instagram.com/lemonfy.studio?igsh=ZTN2cGQ4Nzlpbjhh"
                 target="_blank"
