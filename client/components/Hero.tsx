@@ -1,0 +1,48 @@
+import { Button } from "@/components/ui/button";
+import { Citrus, ArrowRight, Code, Laptop } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden py-24 md:py-32 lg:py-48">
+      {/* Background decorations */}
+      <div className="absolute top-0 right-0 -mr-24 -mt-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
+      <div className="absolute bottom-0 left-0 -ml-24 -mb-24 h-96 w-96 rounded-full bg-secondary/20 blur-3xl" />
+      
+      <div className="container relative mx-auto px-4">
+        <div className="flex flex-col items-center text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border bg-muted/50 px-3 py-1 text-sm font-medium mb-8">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            <span>Novo: Lemonfy v2.0 lançado!</span>
+          </div>
+          
+          <h1 className="max-w-4xl text-5xl font-extrabold tracking-tight md:text-7xl lg:text-8xl mb-6">
+            Transformando o <span className="text-primary italic">digital</span> em algo <span className="underline decoration-secondary">refrescante</span>.
+          </h1>
+          
+          <p className="max-w-2xl text-lg text-muted-foreground md:text-xl mb-10 leading-relaxed">
+            Na Lemonfy, criamos experiências digitais únicas. Do desenvolvimento web impecável a softwares robustos que impulsionam seu negócio.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="rounded-full px-8 text-lg font-bold group h-14">
+              Começar Projeto
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button size="lg" variant="outline" className="rounded-full px-8 text-lg font-bold h-14">
+              Ver Portfólio
+            </Button>
+          </div>
+          
+          <div className="mt-20 flex flex-wrap justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="flex items-center gap-2"><Laptop className="h-6 w-6" /> <span className="font-bold">Web Dev</span></div>
+            <div className="flex items-center gap-2"><Code className="h-6 w-6" /> <span className="font-bold">Software Engineering</span></div>
+            <div className="flex items-center gap-2"><Citrus className="h-6 w-6" /> <span className="font-bold">UI/UX Design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
