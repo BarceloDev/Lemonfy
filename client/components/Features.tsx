@@ -59,17 +59,6 @@ export default function Features() {
                 alt="Web development team" 
                 className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex flex-col justify-end p-8">
-                <div className="bg-background/90 backdrop-blur-md p-6 rounded-2xl max-w-xs shadow-xl">
-                  <div className="flex items-center gap-2 text-primary font-bold mb-2">
-                    <Citrus className="h-5 w-5" />
-                    <span>Facto Lemonfy</span>
-                  </div>
-                  <p className="text-sm font-medium italic text-muted-foreground leading-relaxed">
-                    "85% dos nossos clientes voltaram para um segundo projeto em menos de 1 ano. A qualidade é o nosso segredo."
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
