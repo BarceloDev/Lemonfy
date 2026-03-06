@@ -38,9 +38,6 @@ export default function Navbar() {
             ))}
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Button size="sm" className="rounded-full px-6 font-bold">
-                Começar
-              </Button>
             </div>
           </div>
 
@@ -72,9 +69,6 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full rounded-full font-bold">
-                Começar agora
-              </Button>
             </div>
           </div>
         )}
